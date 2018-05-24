@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">红线</string>
+    <string name="account">账号</string>
+    <string name="pwd">密码</string>
+    <string name="title_activity_display">DisplayActivity</string>
+    <string name="title_activity_welcome_page">welcomePage</string>
+    <string name="title_activity_main3">Main3Activity</string>
+    <string name="allmatch">所有配对</string>
+    <string name="goaround">附近走走</string>
+    <string name="myredline">我的红线</string>
+    <string name="myinfo">我的消息</string>
+    <string name="setting">系统设置</string>
+
+    <string-array name="welcome_page_text_setting">
+        <item>北京</item>
+        <item>上海</item>
+        <item>广州</item>
+        <item>深圳</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

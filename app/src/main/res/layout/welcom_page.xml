@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_back"
+
+    >
+
+
+
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:srcCompat="@drawable/welcome_logo"
+            android:layout_marginTop="82dp"
+            android:id="@+id/imageView"
+            android:scaleType="fitCenter"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:text="登录"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="133dp"
+            android:id="@+id/welcome_btn_login"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+
+            />
+
+        <Button
+            android:text="其他方式登录"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:layout_alignTop="@+id/welcome_btn_login"
+            android:layout_alignLeft="@+id/welcome_btn_login"
+            android:layout_alignStart="@+id/welcome_btn_login"
+            android:layout_marginTop="64dp"
+
+            />
+
+
+</RelativeLayout>

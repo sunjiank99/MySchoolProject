@@ -1,0 +1,24 @@
+apply plugin: 'java'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'junit:junit:4.12'
+    compile files('src/main/java/activation.jar')
+    compile files('src/main/java/mail.jar')
+    compile files('src/main/java/asm.jar')
+    compile files('src/main/java/axis.jar')
+    compile files('src/main/java/asm-attrs.jar')
+    compile files('src/main/java/axis-ant.jar')
+    compile files('src/main/java/commons-discovery-0.2.jar')
+    compile files('src/main/java/commons-logging-1.0.4.jar')
+    compile files('src/main/java/dom4j-1.6.1.jar')
+    compile files('src/main/java/jaxrpc.jar')
+    compile files('src/main/java/log4j-1.2.8.jar')
+    compile files('src/main/java/saaj.jar')
+    compile files('src/main/java/wsdl4j-1.5.1.jar')
+    compile files('src/main/java/xerces-2.6.2.jar')
+    compile files('src/main/java/xml-apis.jar')
+    compile files('src/main/java/XmlSchema-1.0.jar')
+    compile files('src/main/java/com/example/ksoap2-android-assembly-3.3.0-jar-with-dependencies.jar')
+    implementation files('src/main/java/com/example/javax.xml.bind-2.0.jar')
+}

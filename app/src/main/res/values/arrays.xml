@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+    </declare-styleable>
+    <declare-styleable name="StockManage">
+        <attr name="width" format="dimension" /><!-- 宽度 -->
+        <attr name="height" format="dimension" /><!-- 高度 -->
+        <attr name="inColor" format="color" /><!-- 圈内颜色 -->
+        <attr name="outColor" format="color" /><!-- 圈外颜色 -->
+        <attr name="textColor" format="color" /><!-- 颜色-->
+        <attr name="stroke" format="dimension" /><!-- 圆圈的宽度 -->
+        <attr name="textSize" format="dimension" /><!-- 字体大小 -->
+        <attr name="text" format="string" /><!-- 字 -->
+        <attr name="icon" format="reference" /><!-- 图片 -->
+    </declare-styleable>
+    <string-array name="match_page_setting">
+        <item>c语言</item>
+        <item>java </item>
+        <item>php</item>
+        <item>xml</item>
+        <item>html</item>
+    </string-array>
+</resources>

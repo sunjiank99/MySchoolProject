@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--这是侧滑菜单页面-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#413634"
+    android:orientation="vertical" >
+
+     <!--头像资料编辑区-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:id="@+id/layout_menu_layout_profileandsetting"
+        >
+
+        <TextView
+            android:id="@+id/layout_menu_text_nick"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/profile_image"
+            android:layout_marginTop="19dp"
+
+
+            android:gravity="center"
+            android:text="晨风中的厄洛斯"
+            android:textColor="#ffffff"
+            android:textSize="17.0sp" />
+
+        <com.example.administrator.redline.View.CustomImageView
+
+            android:id="@+id/profile_image"
+            android:src="@drawable/touxiang"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+
+            app:border_width="3dp"
+            app:border_color="#CCCCCC"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="18dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="12.0sp"
+            android:text="点击查看/编辑"
+            android:textColor="#cccccc"
+            android:layout_below="@+id/layout_menu_text_nick"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/layout_menu_personalinfosetting"/>
+
+
+    </RelativeLayout>
+
+
+     <!--菜单区-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_menu_left"
+        android:layout_below="@+id/layout_menu_layout_profileandsetting"
+        android:id="@+id/layout_menu_layout_goaround"
+        android:layout_marginTop="10dp"
+        >
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/layout_menu_go_around"
+                android:scaleType="fitCenter"
+                android:layout_marginLeft="20dp"
+                android:layout_toLeftOf="@+id/layout_menu_goaround"
+                android:layout_centerVertical="true"/>
+
+
+        <TextView
+            android:id="@+id/layout_menu_goaround"
+            android:layout_width="200dp"
+            android:layout_height="50.0dp"
+            android:clickable="true"
+            android:drawablePadding="1.0dp"
+            android:gravity="center"
+
+            android:text="附近走走"
+            android:textColor="#cccccc"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="#291f1d"
+        android:layout_alignBottom="@+id/layout_menu_layout_goaround"
+        android:id="@+id/layout_menu_layout_bottom_line_goaround"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_menu_left"
+        android:layout_below="@+id/layout_menu_layout_bottom_line_goaround"
+        android:id="@+id/layout_menu_layout_myinfo"
+
+
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/layout_menu_info"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/layout_menu_myinfo"
+            android:layout_centerVertical="true"
+            />
+
+        <TextView
+            android:id="@+id/layout_menu_myinfo"
+        android:layout_width="200dp"
+        android:layout_height="50.0dip"
+        android:clickable="true"
+        android:drawablePadding="1.0dip"
+        android:gravity="center"
+
+
+            android:text="我的消息"
+        android:textColor="#cccccc"
+
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="#291f1d"
+        android:layout_below="@+id/layout_menu_layout_myinfo"
+        android:id="@+id/layout_menu_layout_bottom_line_myinfo"/>
+     <RelativeLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:background="@drawable/layout_menu_left"
+         android:layout_below="@+id/layout_menu_layout_bottom_line_myinfo"
+         android:id="@+id/layout_menu_layout_allmatch"
+         >
+         <ImageView
+             android:layout_width="30dp"
+             android:layout_height="30dp"
+             android:src="@drawable/layout_menu_allmatch"
+             android:scaleType="fitCenter"
+             android:layout_marginLeft="20dp"
+             android:layout_toLeftOf="@+id/layout_menu_allmatch"
+             android:layout_centerVertical="true"/>
+
+         <TextView
+             android:id="@+id/layout_menu_allmatch"
+             android:layout_width="200dp"
+             android:layout_height="50.0dip"
+
+             android:drawablePadding="1.0dip"
+             android:gravity="center"
+
+             android:text="所有配对"
+             android:textColor="#cccccc"
+
+             android:layout_alignParentTop="true"
+             android:layout_centerHorizontal="true" />
+     </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="#291f1d"
+        android:layout_below="@+id/layout_menu_layout_allmatch"
+        android:id="@+id/layout_menu_layout_bottom_line_allmatch"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_menu_left"
+        android:layout_below="@+id/layout_menu_layout_bottom_line_allmatch"
+        android:id="@+id/layout_menu_layout_myredline"
+        >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/layout_menu_myredline"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/layout_menu_myredline"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/layout_menu_myredline"
+            android:layout_width="200dp"
+            android:layout_height="50.0dip"
+            android:clickable="true"
+            android:drawablePadding="1.0dip"
+            android:gravity="center"
+
+            android:text="我的红线"
+            android:textColor="#cccccc"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="#291f1d"
+        android:layout_below="@+id/layout_menu_layout_myredline"
+        android:id="@+id/layout_menu_layout_bottom_line_myredline"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/layout_menu_left"
+        android:layout_below="@+id/layout_menu_layout_bottom_line_myredline"
+        android:id="@+id/layout_menu_layout_setting"
+       >
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/layout_menu_setting"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="20dp"
+            android:layout_toLeftOf="@+id/layout_menu_setting"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/layout_menu_setting"
+            android:layout_width="200dp"
+            android:layout_height="50.0dip"
+            android:clickable="true"
+            android:drawablePadding="1.0dip"
+            android:gravity="center"
+
+
+            android:text="系统设置"
+            android:textColor="#cccccc"
+
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2.0dip"
+        android:background="#291f1d"
+        android:layout_below="@+id/layout_menu_layout_setting"
+        android:id="@+id/layout_menu_layout_bottom_line_setting"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/layout_menu_return"
+        android:layout_marginLeft="18dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginBottom="17dp"
+        android:id="@+id/layout_menu_image_return"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:text="退出"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#cccccc"
+
+        android:id="@+id/textView6"
+        android:layout_alignTop="@+id/layout_menu_image_return"
+        android:layout_toRightOf="@+id/layout_menu_image_return"
+        android:layout_toEndOf="@+id/layout_menu_image_return"
+        android:layout_marginTop="6dp"/>
+
+
+</RelativeLayout>
